@@ -7,7 +7,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
 
 RUN cd $CATALINA_HOME \
-	&&wget -O tomcat.tar.gz http://apache.fayea.com/tomcat/tomcat-8/v8.0.22/bin/apache-tomcat-8.0.22.tar.gz \
+	&&wget -O tomcat.tar.gz http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.22/bin/apache-tomcat-8.0.22.tar.gz \
 	&& tar -xvf tomcat.tar.gz --strip-components=1 \
 	&& cd $CATALINA_HOME \
 	&& rm bin/*.bat \
